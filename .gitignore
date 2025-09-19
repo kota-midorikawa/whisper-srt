@@ -1,0 +1,20 @@
+﻿# Python
+__pycache__/
+*.pyc
+
+# Media (do not commit raw recordings)
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mkv
+*.webm
+
+# Generated captions
+*.srt
+*.vtt
+outputs/
+
+# Editors
+.vscode/
+.idea/
