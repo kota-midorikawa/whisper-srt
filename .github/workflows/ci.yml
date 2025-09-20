@@ -1,0 +1,7 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  python-ci:
+    uses: kota-midorikawa/.github/.github/workflows/python-ci.yml@main
+    with:
+      python-version: '["3.11"]'
