@@ -1,0 +1,11 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+jobs:
+  python:
+    uses: kota-midorikawa/.github/.github/workflows/python-ci.yml@main
+    with:
+      python-version: '["3.11","3.12"]'
+    secrets: inherit
