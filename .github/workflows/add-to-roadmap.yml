@@ -1,0 +1,13 @@
+name: Add to KM Engineering Roadmap
+on:
+  issues:
+    types: [opened, reopened, labeled]
+  pull_request:
+    types: [opened, reopened, ready_for_review, labeled]
+  workflow_dispatch:
+jobs:
+  call:
+    uses: kota-midorikawa/.github/.github/workflows/add-to-roadmap-reusable.yml@main
+    secrets: inherit
+    with:
+      project_url: https://github.com/users/kota-midorikawa/projects/4
